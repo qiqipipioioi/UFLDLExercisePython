@@ -246,9 +246,9 @@ if __name__ == '__main__':
     sio.savemat('cnnPooledFeatures.mat', cnnPooledFeatures)
 
     #step7 用卷积特征来进行softmax预测,这个就很快了,十几秒, 正确率为80%左右
-    Mat1 = sio.loadmat('cnnPooledFeatures.mat')
-    pooledFeaturesTrain = Mat1['pooledFeaturesTrain']
-    pooledFeaturesTest = Mat1['pooledFeaturesTest']
+    #Mat1 = sio.loadmat('cnnPooledFeatures.mat')
+    #pooledFeaturesTrain = Mat1['pooledFeaturesTrain']
+    #pooledFeaturesTest = Mat1['pooledFeaturesTest']
     softmaxLambda = 1e-4
     numClasses = 4
     inputSize = int(pooledFeaturesTrain.size/numTrainImages)
@@ -264,4 +264,3 @@ if __name__ == '__main__':
     softmaxY = testLabels
     accuracy = softmax.predict(X,softmaxX,softmaxY,inputSize,numClasses)
     print accuracy
-
