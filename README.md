@@ -14,16 +14,21 @@ UFLDL:http://deeplearning.stanford.edu/wiki/index.php/UFLDL_Tutorial
 ##目录结构
 
 ```
-├── README.md
 ├── convolvePool
-│   └── cnn.py
+│   ├── cnn.py
+│   ├── resultFeatures.mat
+│   ├── stlTestSubset.mat
+│   └── stlTrainSubset.mat
+├── LICENSE
 ├── linearAutoencoder
-│   └── linearAutoencoder.py
+│   ├── linearAutoencoder.py
+│   └── stlSampledPatches.mat
 ├── MNIST
 │   ├── t10k-images-idx3-ubyte
 │   ├── t10k-labels-idx1-ubyte
 │   ├── train-images-idx3-ubyte
 │   └── train-labels-idx1-ubyte
+├── README.md
 ├── selfLearn
 │   └── selfLearn.py
 ├── softmax
@@ -53,7 +58,8 @@ convolvePool : 处理大型图像
 
 ##附
 
-本实验参考了matlab版的练习答案,详见http://www.cnblogs.com/tornadomeet/tag/Deep%20Learning/,这篇博客的讲解更为详细,苦于网上没有完整的python版本的练习,因此产生了这个python版的练习答案,收获还是颇多.  
+本实验参考了matlab版的练习答案,详见http://www.cnblogs.com/tornadomeet/tag/Deep%20Learning/  
+这篇博客的讲解更为详细,苦于网上没有完整的python版本的练习,因此产生了这个python版的练习答案,收获还是颇多.  
 
 即便用了OpenBLAS编译numpy,python的矩阵运算效率依旧低于matlab,不知道用MKL编译会不会好些.
 
