@@ -9,7 +9,7 @@ Update:2016-02-09  python2.7测试通过
 
 numpy:Python的一种开源的数值计算扩展,用于进行矩阵运算.  
 scipy:Python科学计算包.  
-OpenBLAS:建议用先安装OpenBLAS或者MKL,然后再编译安装numpy和scipy,不然矩阵运算会很慢,https://github.com/xianyi/OpenBLAS.  
+OpenBLAS:建议先安装OpenBLAS或者MKL,然后再编译安装numpy和scipy,不然矩阵运算会很慢,https://github.com/xianyi/OpenBLAS.  
 
 ##目录结构
 
